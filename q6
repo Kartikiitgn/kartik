@@ -1,0 +1,5 @@
+def key_sort(dic):
+    return dic["age"]
+l=[{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 22}]
+l.sort(key=key_sort)
+print(l)

@@ -1,0 +1,24 @@
+d1={'a': 10, 'b': 20}
+d2={'b': 5, 'c': 15}
+d3={}
+d_3={}
+hits=[]
+for i in d1.keys():
+    
+    for j in d2.keys():
+        if i==j:
+            d3[i]=d1[i]+d2[i]
+            hits.append(i)
+            
+            
+            break
+for i in hits:
+    d1.pop(i)
+    d2.pop(i)
+d3.update(d1)
+d3.update(d2)
+l=list(d3.keys())
+l.sort()
+for i in l:
+    d_3[i]=d3[i]
+print(d_3)

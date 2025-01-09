@@ -1,0 +1,20 @@
+def mean(l):
+    m=0
+    for i in l:
+        m+=i
+    return m/len(l)
+def median(l):
+    l.sort()
+    if len(l)%2==0:
+        return (l[int(len(l)/2)]+l[int(len(l)/2+1)])/2
+    return l[int((len(l)+1)/2)]
+def mode(l):
+    mode=l[0]
+    s=set(l)
+    for i in s:
+        if l.count(mode)<l.count(i):
+            mode=i
+        
+    return mode
+l=[2,2,3,4,5,6,7,8,3,4,5,2,3,4,2,34]
+print(mean(l),mode(l),median(l))

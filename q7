@@ -1,0 +1,19 @@
+def anagram_finder(a,l):
+   a_=[]
+   final=[]
+   for i in a:
+      if i!=" ":
+         a_.append(i)
+   for i in l:
+      ch=[]
+      
+      for j in i:
+         if j!=" ":
+            ch.append(j)
+      if sorted(ch)==sorted(a_):
+        
+         final.append(i)
+      
+    
+   return final
+print(anagram_finder("listen",["enlist", "google", "inlets", "banana"]))

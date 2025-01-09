@@ -1,0 +1,9 @@
+l=input()
+k=l.split(",")
+
+for i in range(0,len(k)):
+    k[i]=int(k[i])
+k.sort()
+print(k)
+print("smallest ",k[0])
+print("largest ",k[len(k)-1])

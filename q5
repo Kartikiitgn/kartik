@@ -1,0 +1,16 @@
+def mean(l):
+    m=0
+    for i in l:
+        m+=i
+    return m/len(l)
+def median(l):
+    if len(l)%2!=0:
+        median=l[int((len(l)+1)/2)]
+    else:
+        median=(l[int(len(l)/2)]+l[int(len(l)/2+1)])/2
+    return median
+l=[1,2,3,4,52,4,5,6,2,3,5,23,5,3,5,3,53,53,5,3]
+s=set(l)
+l=list(s)
+print("mean ",mean(l))
+print("median ",median(l))
